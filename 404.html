@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ไม่พบหน้าที่คุณค้นหา | Ray & Co, Vision Lab</title>
+<meta name="description" content="ไม่พบหน้าที่คุณกำลังค้นหา กลับสู่หน้าแรกของ Ray & Co, Vision Lab">
+<meta name="robots" content="noindex">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/logo/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .error-page{
+    min-height:100svh; background:var(--black); color:var(--white);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:40px var(--pad);
+  }
+  .error-page .brand-logo-img{ height:56px; margin-bottom:48px; }
+  .error-code{
+    font-family:var(--serif); font-size:clamp(80px,16vw,160px); font-weight:500; line-height:1;
+    color:var(--gold-bright); letter-spacing:.02em;
+  }
+  .error-title{ font-family:var(--serif); font-size:clamp(24px,3.4vw,34px); margin-top:16px; }
+  .error-desc{ color:var(--muted-on-dark); font-size:15px; margin-top:14px; max-width:420px; line-height:1.8; }
+  .error-actions{ display:flex; gap:16px; margin-top:36px; flex-wrap:wrap; justify-content:center; }
+</style>
+</head>
+<body>
+
+<div class="error-page">
+  <a href="index.html" class="brand-mark">
+    <img src="assets/logo/logo-white.png" alt="Ray & Co, Vision Lab" class="brand-logo-img">
+  </a>
+  <div class="ray-line on-dark short lit" style="margin:0 auto 28px;"></div>
+  <p class="error-code">404</p>
+  <h1 class="error-title">ไม่พบหน้าที่คุณค้นหา</h1>
+  <p class="error-desc">หน้านี้อาจถูกย้าย ลบไปแล้ว หรือลิงก์ที่คุณกดเข้ามาอาจไม่ถูกต้อง ลองกลับไปที่หน้าแรกหรือแอดไลน์สอบถามทีมงานของเราได้เลย</p>
+  <div class="error-actions">
+    <a href="index.html" class="btn btn-outline-dark"><span>กลับหน้าแรก</span></a>
+    <a href="https://line.me/R/ti/p/@rayandco" target="_blank" rel="noopener" class="btn btn-line line-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 5.79 2 10.45c0 4.17 3.55 7.67 8.35 8.32.32.07.77.21.88.49.1.25.06.65.03.9l-.14.9c-.04.25-.2.99.86.54 1.06-.45 5.72-3.37 7.8-5.77C21.24 13.9 22 12.26 22 10.45 22 5.79 17.52 2 12 2Z"/></svg>
+      <span>แอดไลน์สอบถาม</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
