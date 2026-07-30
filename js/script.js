@@ -139,12 +139,30 @@
   /* ---------- Product tab filter ---------- */
   const tabBtns = document.querySelectorAll('.tab-btn');
   const productCards = document.querySelectorAll('.product-card');
+  const productGrid = document.getElementById('productGrid');
+  const showcaseCount = document.getElementById('showcaseCount');
+  const sortSelect = document.getElementById('sortSelect');
   let activeCategoryFilter = 'all';
+
+  // Populate tab counts once on load
+  const totalCount = productCards.length;
+  tabBtns.forEach(btn => {
+    const f = btn.dataset.filter;
+    const countEl = btn.querySelector('.tab-count');
+    if (!countEl) return;
+    const n = f === 'all' ? totalCount : Array.from(productCards).filter(c => c.dataset.cat === f).length;
+    countEl.textContent = `(${n})`;
+  });
+
+  function updateShowcaseCount(visible, total){
+    if (showcaseCount) showcaseCount.textContent = `แสดง ${visible} จาก ${total} รายการ`;
+  }
 
   function applyFilter(filter){
     activeCategoryFilter = filter;
     tabBtns.forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
     let delay = 0;
+    let visible = 0;
     productCards.forEach(card => {
       const match = filter === 'all' || card.dataset.cat === filter;
       if (match){
@@ -152,11 +170,13 @@
         card.classList.remove('show');
         setTimeout(() => card.classList.add('show'), 30 + delay);
         delay += 60;
+        visible++;
       } else {
         card.classList.remove('show');
         card.style.display = 'none';
       }
     });
+    updateShowcaseCount(visible, totalCount);
   }
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
@@ -170,6 +190,29 @@
       setTimeout(() => applyFilter(f), 350);
     });
   });
+
+  /* ---------- Product sort ---------- */
+  if (sortSelect && productGrid){
+    const originalOrder = Array.from(productGrid.children);
+    sortSelect.addEventListener('change', () => {
+      const mode = sortSelect.value;
+      let cards = Array.from(productGrid.children);
+      if (mode === 'default'){
+        cards = originalOrder;
+      } else if (mode === 'price-asc'){
+        cards.sort((a,b) => Number(a.dataset.price||0) - Number(b.dataset.price||0));
+      } else if (mode === 'price-desc'){
+        cards.sort((a,b) => Number(b.dataset.price||0) - Number(a.dataset.price||0));
+      } else if (mode === 'name-asc'){
+        cards.sort((a,b) => {
+          const an = a.querySelector('h3')?.textContent.trim() || '';
+          const bn = b.querySelector('h3')?.textContent.trim() || '';
+          return an.localeCompare(bn, 'th');
+        });
+      }
+      cards.forEach(card => productGrid.appendChild(card));
+    });
+  }
 
   /* ---------- Product search ---------- */
   const searchToggle = document.getElementById('searchToggle');
@@ -235,6 +278,7 @@
       searchStatus.textContent = `พบ ${count} รายการ`;
       searchStatus.classList.remove('no-results');
     }
+    updateShowcaseCount(count, totalCount);
   }
 
   let searchDebounce;

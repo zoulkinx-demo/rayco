@@ -30,6 +30,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<!-- Preload the first hero image (LCP) for faster paint -->
+<link rel="preload" as="image" href="assets/shop/shop-14.jpg" fetchpriority="high">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,7 +43,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container">
     <a href="#top" class="brand-mark">
-      <img src="assets/logo/logo-white.png" alt="Ray & Co, Vision Lab" class="brand-logo-img">
+      <img src="assets/logo/logo-white.png" width="368" height="240" alt="Ray & Co, Vision Lab" class="brand-logo-img">
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -83,10 +86,10 @@
      ========================================================= -->
 <section class="hero" id="top">
   <div class="hero-slides" id="heroSlides">
-    <div class="hero-slide active"><img src="assets/shop/shop-14.jpg" alt="เคาน์เตอร์แสดงสินค้าภายในร้าน Ray & Co, Vision Lab" style="--pos:center 30%"></div>
-    <div class="hero-slide"><img src="assets/products/product-04.jpg" alt="กรอบแว่นตาคอลเลกชันซิกเนเจอร์ระยะใกล้"></div>
-    <div class="hero-slide"><img src="assets/shop/shop-01.jpg" alt="ชั้นวางแว่นตาภายในร้าน"></div>
-    <div class="hero-slide"><img src="assets/shop/shop-05.jpg" alt="บรรยากาศภายในร้าน Ray & Co"></div>
+    <div class="hero-slide active"><img src="assets/shop/shop-14.jpg" width="1400" height="940" alt="เคาน์เตอร์แสดงสินค้าภายในร้าน Ray & Co, Vision Lab" style="--pos:center 30%" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="assets/products/product-04.jpg" width="1400" height="1120" alt="กรอบแว่นตาคอลเลกชันซิกเนเจอร์ระยะใกล้"></div>
+    <div class="hero-slide"><img src="assets/shop/shop-01.jpg" width="1600" height="502" alt="ชั้นวางแว่นตาภายในร้าน"></div>
+    <div class="hero-slide"><img src="assets/shop/shop-05.jpg" width="1400" height="940" alt="บรรยากาศภายในร้าน Ray & Co"></div>
   </div>
 
   <div class="hero-content">
@@ -101,6 +104,13 @@
           <span>แอดไลน์เพื่อสั่งซื้อ</span>
         </a>
         <a href="#collection" class="btn btn-outline-dark"><span>ดูคอลเลกชัน</span></a>
+      </div>
+      <div class="hero-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>ของแท้ 100%</span>
+        <span class="hero-trust-sep">•</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21v-6h6v6"/></svg>มีหน้าร้านจริง</span>
+        <span class="hero-trust-sep">•</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21l8.84-8.61a5.5 5.5 0 0 0 0-7.78Z"/></svg>ตัวแทนจำหน่าย 18+ แบรนด์</span>
       </div>
     </div>
   </div>
@@ -136,7 +146,7 @@
           <div class="bs-slide-media" data-lightbox data-caption="Eclipse Rimless สินค้าขายดีอันดับ 1">
             <div class="bs-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3L21 9l-4.9 4.5L17.3 21 12 17.8 6.7 21l1.2-7.5L3 9l6.1-.7L12 2Z"/></svg>สินค้าขายดี</div>
             <div class="bs-rank">01</div>
-            <img src="assets/products/product-01.jpg" alt="Eclipse Rimless สินค้าขายดีอันดับ 1" loading="lazy">
+            <img src="assets/products/product-01.jpg" width="1536" height="1024" alt="Eclipse Rimless สินค้าขายดีอันดับ 1" loading="lazy">
           </div>
           <div class="bs-slide-body">
             <p class="pk">Signature</p>
@@ -150,7 +160,7 @@
           <div class="bs-slide-media" data-lightbox data-caption="Tortoise Classic สินค้าขายดีอันดับ 2">
             <div class="bs-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3L21 9l-4.9 4.5L17.3 21 12 17.8 6.7 21l1.2-7.5L3 9l6.1-.7L12 2Z"/></svg>สินค้าขายดี</div>
             <div class="bs-rank">02</div>
-            <img src="assets/products/product-09.jpg" alt="Tortoise Classic สินค้าขายดีอันดับ 2" loading="lazy">
+            <img src="assets/products/product-09.jpg" width="1600" height="1159" alt="Tortoise Classic สินค้าขายดีอันดับ 2" loading="lazy">
           </div>
           <div class="bs-slide-body">
             <p class="pk">Optical</p>
@@ -164,7 +174,7 @@
           <div class="bs-slide-media" data-lightbox data-caption="Obsidian Sun สินค้าขายดีอันดับ 3">
             <div class="bs-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3L21 9l-4.9 4.5L17.3 21 12 17.8 6.7 21l1.2-7.5L3 9l6.1-.7L12 2Z"/></svg>สินค้าขายดี</div>
             <div class="bs-rank">03</div>
-            <img src="assets/products/product-08.jpg" alt="Obsidian Sun สินค้าขายดีอันดับ 3" loading="lazy">
+            <img src="assets/products/product-08.jpg" width="815" height="737" alt="Obsidian Sun สินค้าขายดีอันดับ 3" loading="lazy">
           </div>
           <div class="bs-slide-body">
             <p class="pk">Sunglasses</p>
@@ -178,7 +188,7 @@
           <div class="bs-slide-media" data-lightbox data-caption="Aurum Round สินค้าขายดีอันดับ 4">
             <div class="bs-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3L21 9l-4.9 4.5L17.3 21 12 17.8 6.7 21l1.2-7.5L3 9l6.1-.7L12 2Z"/></svg>สินค้าขายดี</div>
             <div class="bs-rank">04</div>
-            <img src="assets/products/product-04.jpg" alt="Aurum Round สินค้าขายดีอันดับ 4" loading="lazy">
+            <img src="assets/products/product-04.jpg" width="1400" height="1120" alt="Aurum Round สินค้าขายดีอันดับ 4" loading="lazy">
           </div>
           <div class="bs-slide-body">
             <p class="pk">Signature</p>
@@ -218,7 +228,7 @@
       <div class="story-media reveal">
         <div class="gold-frame" aria-hidden="true"></div>
         <div class="frame">
-          <img src="assets/products/product-06.jpg" alt="กรอบแว่นตาซิกเนเจอร์สีดำเงางาม Ray & Co">
+          <img src="assets/products/product-06.jpg" width="1535" height="1535" alt="กรอบแว่นตาซิกเนเจอร์สีดำเงางาม Ray & Co">
           <span class="frame-tag">Vision Lab Studio</span>
         </div>
       </div>
@@ -371,24 +381,24 @@
     </div>
 
     <div class="brand-grid reveal">
-      <div class="brand-logo-item"><img src="assets/brands/ray-ban.png" alt="Ray-Ban" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/oakley.png" alt="Oakley" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/bolon.png" alt="Bolon" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/miu-miu.png" alt="Miu Miu" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/prada.png" alt="Prada" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/lindberg.png" alt="Lindberg" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/ic-berlin.png" alt="ic! berlin" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/silhouette.png" alt="Silhouette" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/mykita.png" alt="Mykita" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/tom-ford.png" alt="Tom Ford" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/dior.png" alt="Dior" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/saint-laurent.png" alt="Saint Laurent" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/gucci.png" alt="Gucci" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/celine.png" alt="Celine" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/le-specs.png" alt="Le Specs" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/jacquemus.png" alt="Jacquemus" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/balenciaga.png" alt="Balenciaga" loading="lazy"></div>
-      <div class="brand-logo-item"><img src="assets/brands/versace.png" alt="Versace" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/ray-ban.png" width="500" height="220" alt="Ray-Ban" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/oakley.png" width="500" height="220" alt="Oakley" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/bolon.png" width="500" height="220" alt="Bolon" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/miu-miu.png" width="500" height="220" alt="Miu Miu" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/prada.png" width="500" height="220" alt="Prada" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/lindberg.png" width="500" height="220" alt="Lindberg" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/ic-berlin.png" width="500" height="220" alt="ic! berlin" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/silhouette.png" width="500" height="220" alt="Silhouette" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/mykita.png" width="500" height="220" alt="Mykita" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/tom-ford.png" width="500" height="220" alt="Tom Ford" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/dior.png" width="500" height="220" alt="Dior" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/saint-laurent.png" width="500" height="220" alt="Saint Laurent" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/gucci.png" width="500" height="220" alt="Gucci" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/celine.png" width="500" height="220" alt="Celine" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/le-specs.png" width="500" height="220" alt="Le Specs" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/jacquemus.png" width="500" height="220" alt="Jacquemus" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/balenciaga.png" width="500" height="220" alt="Balenciaga" loading="lazy"></div>
+      <div class="brand-logo-item"><img src="assets/brands/versace.png" width="500" height="220" alt="Versace" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -405,19 +415,32 @@
         <p class="section-desc">คัดสรรกรอบแว่นจากคอลเลกชันของเรา — สนใจชิ้นไหน แอดไลน์สอบถามสต็อกและราคาได้ทันที</p>
       </div>
       <div class="tabs" id="productTabs">
-        <button class="tab-btn active" data-filter="all">ทั้งหมด</button>
-        <button class="tab-btn" data-filter="signature">ซิกเนเจอร์</button>
-        <button class="tab-btn" data-filter="sun">แว่นกันแดด</button>
-        <button class="tab-btn" data-filter="optical">แว่นสายตา</button>
+        <button class="tab-btn active" data-filter="all">ทั้งหมด <span class="tab-count"></span></button>
+        <button class="tab-btn" data-filter="signature">ซิกเนเจอร์ <span class="tab-count"></span></button>
+        <button class="tab-btn" data-filter="sun">แว่นกันแดด <span class="tab-count"></span></button>
+        <button class="tab-btn" data-filter="optical">แว่นสายตา <span class="tab-count"></span></button>
+      </div>
+    </div>
+
+    <div class="showcase-controls reveal">
+      <p class="showcase-count" id="showcaseCount"></p>
+      <div class="sort-wrap">
+        <label for="sortSelect">เรียงตาม</label>
+        <select id="sortSelect">
+          <option value="default">แนะนำ</option>
+          <option value="price-asc">ราคา: น้อย → มาก</option>
+          <option value="price-desc">ราคา: มาก → น้อย</option>
+          <option value="name-asc">ชื่อสินค้า: ก → ฮ</option>
+        </select>
       </div>
     </div>
 
     <div class="product-grid" id="productGrid">
       <!-- Signature -->
-      <article class="product-card" data-cat="signature">
+      <article class="product-card" data-cat="signature" data-price="8900">
         <div class="product-media" data-lightbox data-caption="Eclipse Rimless — Signature Collection" data-images="assets/products/product-01.jpg,assets/products/product-01.jpg,assets/products/product-01.jpg">
           <span class="product-tag">Signature</span>
-          <img src="assets/products/product-01.jpg" alt="Eclipse Rimless แว่นตาทรงบางเฉียบขอบทอง คอลเลกชันซิกเนเจอร์" loading="lazy">
+          <img src="assets/products/product-01.jpg" width="1536" height="1024" alt="Eclipse Rimless แว่นตาทรงบางเฉียบขอบทอง คอลเลกชันซิกเนเจอร์" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -429,10 +452,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="signature">
+      <article class="product-card" data-cat="signature" data-price="9500">
         <div class="product-media" data-lightbox data-caption="Aurum Round — Signature Collection" data-images="assets/products/product-04.jpg,assets/products/product-04.jpg,assets/products/product-04.jpg">
           <span class="product-tag">Signature</span>
-          <img src="assets/products/product-04.jpg" alt="Aurum Round แว่นตาทรงกลมกรอบทอง คอลเลกชันซิกเนเจอร์" loading="lazy">
+          <img src="assets/products/product-04.jpg" width="1400" height="1120" alt="Aurum Round แว่นตาทรงกลมกรอบทอง คอลเลกชันซิกเนเจอร์" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -444,10 +467,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="signature">
+      <article class="product-card" data-cat="signature" data-price="7900">
         <div class="product-media" data-lightbox data-caption="Noir Frame — Signature Collection" data-images="assets/products/product-06.jpg,assets/products/product-06.jpg,assets/products/product-06.jpg">
           <span class="product-tag">Signature</span>
-          <img src="assets/products/product-06.jpg" alt="Noir Frame แว่นตากรอบเต็มทรงเหลี่ยมสีดำ คอลเลกชันซิกเนเจอร์" loading="lazy">
+          <img src="assets/products/product-06.jpg" width="1535" height="1535" alt="Noir Frame แว่นตากรอบเต็มทรงเหลี่ยมสีดำ คอลเลกชันซิกเนเจอร์" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -460,10 +483,10 @@
       </article>
 
       <!-- Sunglasses -->
-      <article class="product-card" data-cat="sun">
+      <article class="product-card" data-cat="sun" data-price="5200">
         <div class="product-media" data-lightbox data-caption="Horizon Wrap — Sunglasses" data-images="assets/products/product-03.jpg,assets/products/product-03.jpg,assets/products/product-03.jpg">
           <span class="product-tag">Sunglasses</span>
-          <img src="assets/products/product-03.jpg" alt="Horizon Wrap แว่นกันแดดทรงสปอร์ตโค้งรับใบหน้า" loading="lazy">
+          <img src="assets/products/product-03.jpg" width="640" height="320" alt="Horizon Wrap แว่นกันแดดทรงสปอร์ตโค้งรับใบหน้า" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -475,10 +498,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="sun">
+      <article class="product-card" data-cat="sun" data-price="4500">
         <div class="product-media" data-lightbox data-caption="Obsidian Sun — Sunglasses" data-images="assets/products/product-08.jpg,assets/products/product-08.jpg,assets/products/product-08.jpg">
           <span class="product-tag">Sunglasses</span>
-          <img src="assets/products/product-08.jpg" alt="Obsidian Sun แว่นกันแดดเลนส์ดำเข้มทรงคลาสสิก" loading="lazy">
+          <img src="assets/products/product-08.jpg" width="815" height="737" alt="Obsidian Sun แว่นกันแดดเลนส์ดำเข้มทรงคลาสสิก" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -490,10 +513,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="sun">
+      <article class="product-card" data-cat="sun" data-price="6300">
         <div class="product-media" data-lightbox data-caption="Flex Shield — Sunglasses" data-images="assets/products/product-12.webp,assets/products/product-12.webp,assets/products/product-12.webp">
           <span class="product-tag">Sunglasses</span>
-          <img src="assets/products/product-12.webp" alt="Flex Shield แว่นกันแดดน้ำหนักเบายืดหยุ่นสูง" loading="lazy">
+          <img src="assets/products/product-12.webp" width="1400" height="788" alt="Flex Shield แว่นกันแดดน้ำหนักเบายืดหยุ่นสูง" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -506,10 +529,10 @@
       </article>
 
       <!-- Optical -->
-      <article class="product-card" data-cat="optical">
+      <article class="product-card" data-cat="optical" data-price="3900">
         <div class="product-media" data-lightbox data-caption="Slate Rectangle — Optical" data-images="assets/products/product-02.png,assets/products/product-02.png,assets/products/product-02.png">
           <span class="product-tag">Optical</span>
-          <img src="assets/products/product-02.png" alt="Slate Rectangle กรอบแว่นสายตาทรงสี่เหลี่ยมเรียบหรู" loading="lazy">
+          <img src="assets/products/product-02.png" width="700" height="700" alt="Slate Rectangle กรอบแว่นสายตาทรงสี่เหลี่ยมเรียบหรู" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -521,10 +544,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="optical">
+      <article class="product-card" data-cat="optical" data-price="3500">
         <div class="product-media" data-lightbox data-caption="Clear Vision — Optical" data-images="assets/products/product-05.jpg,assets/products/product-05.jpg,assets/products/product-05.jpg">
           <span class="product-tag">Optical</span>
-          <img src="assets/products/product-05.jpg" alt="Clear Vision กรอบแว่นสายตาใสไร้รอยต่อ" loading="lazy">
+          <img src="assets/products/product-05.jpg" width="1600" height="1064" alt="Clear Vision กรอบแว่นสายตาใสไร้รอยต่อ" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -536,10 +559,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="optical">
+      <article class="product-card" data-cat="optical" data-price="4200">
         <div class="product-media" data-lightbox data-caption="Amber Round — Optical" data-images="assets/products/product-07.jpeg,assets/products/product-07.jpeg,assets/products/product-07.jpeg">
           <span class="product-tag">Optical</span>
-          <img src="assets/products/product-07.jpeg" alt="Amber Round กรอบแว่นสายตาทรงกลมสีชา" loading="lazy">
+          <img src="assets/products/product-07.jpeg" width="800" height="800" alt="Amber Round กรอบแว่นสายตาทรงกลมสีชา" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -551,10 +574,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="optical">
+      <article class="product-card" data-cat="optical" data-price="3800">
         <div class="product-media" data-lightbox data-caption="Tortoise Classic — Optical" data-images="assets/products/product-09.jpg,assets/products/product-09.jpg,assets/products/product-09.jpg">
           <span class="product-tag">Optical</span>
-          <img src="assets/products/product-09.jpg" alt="Tortoise Classic กรอบแว่นสายตาลายกระดองเต่าทรงกลม" loading="lazy">
+          <img src="assets/products/product-09.jpg" width="1600" height="1159" alt="Tortoise Classic กรอบแว่นสายตาลายกระดองเต่าทรงกลม" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -566,10 +589,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="optical">
+      <article class="product-card" data-cat="optical" data-price="4600">
         <div class="product-media" data-lightbox data-caption="Bold Acetate — Optical" data-images="assets/products/product-10.jpg,assets/products/product-10.jpg,assets/products/product-10.jpg">
           <span class="product-tag">Optical</span>
-          <img src="assets/products/product-10.jpg" alt="Bold Acetate กรอบแว่นสายตากรอบหนาดีไซน์เข้ม" loading="lazy">
+          <img src="assets/products/product-10.jpg" width="1600" height="1236" alt="Bold Acetate กรอบแว่นสายตากรอบหนาดีไซน์เข้ม" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -581,10 +604,10 @@
         </div>
       </article>
 
-      <article class="product-card" data-cat="optical">
+      <article class="product-card" data-cat="optical" data-price="3200">
         <div class="product-media" data-lightbox data-caption="Mono Slim — Optical" data-images="assets/products/product-11.jpg,assets/products/product-11.jpg,assets/products/product-11.jpg">
           <span class="product-tag">Optical</span>
-          <img src="assets/products/product-11.jpg" alt="Mono Slim กรอบแว่นสายตาทรงเรียบบางสีดำด้าน" loading="lazy">
+          <img src="assets/products/product-11.jpg" width="386" height="518" alt="Mono Slim กรอบแว่นสายตาทรงเรียบบางสีดำด้าน" loading="lazy">
           <div class="product-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         </div>
         <div class="product-body">
@@ -618,13 +641,13 @@
 
     <div class="gallery-slider reveal">
       <div class="gallery-track" id="galleryTrack">
-        <div class="gallery-item"><img src="assets/shop/shop-14.jpg" alt="เคาน์เตอร์แสดงสินค้า" loading="lazy"><span>เคาน์เตอร์แสดงสินค้า</span></div>
-        <div class="gallery-item"><img src="assets/shop/shop-05.jpg" alt="ผนังจัดแสดงแว่นตา" loading="lazy"><span>ผนังจัดแสดงแว่นตา</span></div>
-        <div class="gallery-item"><img src="assets/shop/shop-01.jpg" alt="ชั้นวางสินค้า" loading="lazy"><span>ชั้นวางสินค้า</span></div>
-        <div class="gallery-item"><img src="assets/shop/shop-09.jpg" alt="มุมจัดแสดงภายในร้าน" loading="lazy"><span>มุมจัดแสดงภายในร้าน</span></div>
-        <div class="gallery-item"><img src="assets/shop/shop-16.jpg" alt="บรรยากาศร้าน Ray & Co" loading="lazy"><span>Vision Lab Studio</span></div>
-        <div class="gallery-item"><img src="assets/shop/shop-11.jpg" alt="พื้นที่ให้บริการลูกค้า" loading="lazy"><span>พื้นที่ให้บริการลูกค้า</span></div>
-        <div class="gallery-item"><img src="assets/shop/shop-17.jpg" alt="ป้ายร้าน Ray & Co, Vision Lab" loading="lazy"><span>หน้าร้าน</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-14.jpg" width="1400" height="940" alt="เคาน์เตอร์แสดงสินค้า" loading="lazy"><span>เคาน์เตอร์แสดงสินค้า</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-05.jpg" width="1400" height="940" alt="ผนังจัดแสดงแว่นตา" loading="lazy"><span>ผนังจัดแสดงแว่นตา</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-01.jpg" width="1600" height="502" alt="ชั้นวางสินค้า" loading="lazy"><span>ชั้นวางสินค้า</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-09.jpg" width="1400" height="940" alt="มุมจัดแสดงภายในร้าน" loading="lazy"><span>มุมจัดแสดงภายในร้าน</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-16.jpg" width="1400" height="940" alt="บรรยากาศร้าน Ray & Co" loading="lazy"><span>Vision Lab Studio</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-11.jpg" width="1400" height="940" alt="พื้นที่ให้บริการลูกค้า" loading="lazy"><span>พื้นที่ให้บริการลูกค้า</span></div>
+        <div class="gallery-item"><img src="assets/shop/shop-17.jpg" width="1286" height="1272" alt="ป้ายร้าน Ray & Co, Vision Lab" loading="lazy"><span>หน้าร้าน</span></div>
       </div>
       <div class="gallery-nav">
         <button id="galPrev" aria-label="เลื่อนภาพก่อนหน้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
@@ -709,7 +732,7 @@
 
     <div class="news-grid">
       <article class="news-card reveal">
-        <div class="news-media"><img src="assets/products/product-09.jpg" alt="5 เทคนิคเลือกกรอบแว่นให้เข้ากับรูปหน้า" loading="lazy"></div>
+        <div class="news-media"><img src="assets/products/product-09.jpg" width="1600" height="1159" alt="5 เทคนิคเลือกกรอบแว่นให้เข้ากับรูปหน้า" loading="lazy"></div>
         <div class="news-body">
           <div class="news-meta"><span class="news-cat">Style Guide</span><span class="news-date">12 ก.ค. 2569</span></div>
           <h3>5 เทคนิคเลือกกรอบแว่นให้เข้ากับรูปหน้า</h3>
@@ -718,7 +741,7 @@
         </div>
       </article>
       <article class="news-card reveal">
-        <div class="news-media"><img src="assets/products/product-05.jpg" alt="วิธีทำความสะอาดแว่นตาอย่างถูกวิธี" loading="lazy"></div>
+        <div class="news-media"><img src="assets/products/product-05.jpg" width="1600" height="1064" alt="วิธีทำความสะอาดแว่นตาอย่างถูกวิธี" loading="lazy"></div>
         <div class="news-body">
           <div class="news-meta"><span class="news-cat">Care Guide</span><span class="news-date">28 มิ.ย. 2569</span></div>
           <h3>ทำความสะอาดแว่นตาอย่างถูกวิธี ยืดอายุการใช้งาน</h3>
@@ -727,7 +750,7 @@
         </div>
       </article>
       <article class="news-card reveal">
-        <div class="news-media"><img src="assets/products/product-04.jpg" alt="เทรนด์แว่นตาปี 2026 ที่กำลังมาแรง" loading="lazy"></div>
+        <div class="news-media"><img src="assets/products/product-04.jpg" width="1400" height="1120" alt="เทรนด์แว่นตาปี 2026 ที่กำลังมาแรง" loading="lazy"></div>
         <div class="news-body">
           <div class="news-meta"><span class="news-cat">Trend</span><span class="news-date">03 มิ.ย. 2569</span></div>
           <h3>เทรนด์แว่นตาที่กำลังมาแรงในปีนี้</h3>
@@ -896,7 +919,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="assets/logo/logo-white.png" alt="Ray & Co, Vision Lab" class="footer-logo-img">
+        <img src="assets/logo/logo-white.png" width="368" height="240" alt="Ray & Co, Vision Lab" class="footer-logo-img">
         <p>See Beyond. Define Your Style. — แบรนด์แว่นตาพรีเมียมที่ช่วยให้คุณมองเห็นโลกในแบบของตัวเอง</p>
         <div class="footer-social">
           <a href="#" target="_blank" rel="noopener" aria-label="Facebook" class="ic-facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H17V3.7C16.5 3.63 15.5 3.5 14.5 3.5c-2.4 0-4 1.46-4 4.14V10H7.8v3.1h2.7v8h3Z"/></svg></a>
