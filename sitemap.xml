@@ -2,7 +2,7 @@
 <!-- เปลี่ยน https://www.your-domain.com/ เป็น URL จริงของเว็บไซต์ก่อนเผยแพร่ -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.your-domain.com/</loc>
+    <loc>https://zoulkinx-demo.github.io/rayco/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
