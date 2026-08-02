@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ไม่พบหน้าที่คุณค้นหา | Ray & Co, Vision Lab</title>
-<meta name="description" content="ไม่พบหน้าที่คุณกำลังค้นหา กลับสู่หน้าแรกของ Ray & Co, Vision Lab">
-<meta name="robots" content="noindex">
-
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" href="assets/logo/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="assets/logo/favicon-16.png" type="image/png" sizes="16x16">
-<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
-  .error-page{
-    min-height:100svh; background:var(--black); color:var(--white);
-    display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:40px var(--pad);
-  }
-  .error-page .brand-logo-img{ height:56px; margin-bottom:48px; }
-  .error-code{
-    font-family:var(--serif); font-size:clamp(80px,16vw,160px); font-weight:500; line-height:1;
-    color:var(--gold-bright); letter-spacing:.02em;
-  }
-  .error-title{ font-family:var(--serif); font-size:clamp(24px,3.4vw,34px); margin-top:16px; }
-  .error-desc{ color:var(--muted-on-dark); font-size:15px; margin-top:14px; max-width:420px; line-height:1.8; }
-  .error-actions{ display:flex; gap:16px; margin-top:36px; flex-wrap:wrap; justify-content:center; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#090a09">
+  <title>ไม่พบหน้าที่ต้องการ — Ray &amp; Co, Vision Lab</title>
+  <link id="errorFavicon" rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/branding/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/branding/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/branding/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Noto+Sans+Thai:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#090a09;--gold:#dab16a;--green:#06c755;--muted:#aaa79f}*{box-sizing:border-box}html,body{min-height:100%}body{margin:0;overflow-x:hidden;overflow-y:auto;background:var(--black);color:#fff;font-family:"Noto Sans Thai",Arial,sans-serif}body:before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle at 50% 48%,#5c47251c 0 12%,transparent 37%),linear-gradient(115deg,transparent 46%,#dab16a08 50%,transparent 54%);animation:sweep 9s ease-in-out infinite}.page{position:relative;isolation:isolate;min-height:100svh;padding:clamp(24px,4vw,64px);display:grid;grid-template-rows:auto 1fr auto}.brand{width:clamp(180px,18vw,238px);color:#fff;text-decoration:none;line-height:0}.brand img{display:block;width:100%;height:auto;object-fit:contain}.stage{display:grid;place-items:center;text-align:center}.content{position:relative;z-index:3;max-width:760px}.kicker{margin:0 0 22px;color:var(--gold);font-size:9px;font-weight:600;letter-spacing:.28em}.code{position:relative;margin:0;color:#fff;font:400 clamp(125px,22vw,320px)/.65 "Cormorant Garamond",serif;letter-spacing:-.1em;text-shadow:0 0 70px #dab16a0d}.code:after{content:"";position:absolute;left:50%;top:50%;width:clamp(190px,30vw,430px);aspect-ratio:1;border:1px solid #dab16a42;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 42px #dab16a12,0 0 0 88px #dab16a08;animation:orbit 18s linear infinite}.content h1{position:relative;z-index:2;margin:56px 0 14px;font:400 clamp(35px,5vw,68px)/1 "Cormorant Garamond","Noto Sans Thai",serif;letter-spacing:-.025em}.content h1 em{color:var(--gold);font-weight:400}.content>p:last-of-type{max-width:590px;margin:0 auto;color:var(--muted);font-size:13px;line-height:1.9}.actions{position:relative;z-index:4;margin-top:34px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{min-height:54px;padding:0 25px;display:inline-flex;align-items:center;justify-content:center;gap:18px;border:1px solid #ffffff28;color:#fff;text-decoration:none;font-size:12px;transition:.3s}.btn:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 15px 35px #0008}.btn-primary{background:#fff;color:#111;border-color:#fff}.btn-line{position:relative;background:var(--green);border-color:var(--green);font-weight:600}.btn-line:after{content:"";position:absolute;inset:-4px;border:2px solid #06c7558c;opacity:0;animation:aura 2.2s ease-out infinite}.footer{display:flex;justify-content:space-between;gap:22px;color:#77766f;font-size:8px;letter-spacing:.16em}.footer span:last-child{color:#a98b55}@keyframes orbit{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes sweep{0%,22%{transform:translateX(-35%)}70%,100%{transform:translateX(35%)}}@keyframes aura{0%{opacity:.65;transform:scale(.96)}75%,100%{opacity:0;transform:scale(1.14)}}@media(max-width:600px){.page{padding:22px}.brand{width:185px}.code{font-size:130px}.code:after{width:190px;box-shadow:0 0 0 28px #dab16a12,0 0 0 57px #dab16a08}.content h1{margin-top:55px;font-size:38px}.actions{flex-direction:column}.btn{width:100%}.footer{align-items:flex-start;flex-direction:column;gap:7px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
 </head>
 <body>
-
-<div class="error-page">
-  <a href="index.html" class="brand-mark">
-    <img src="assets/logo/logo-white.png" alt="Ray & Co, Vision Lab" class="brand-logo-img">
-  </a>
-  <div class="ray-line on-dark short lit" style="margin:0 auto 28px;"></div>
-  <p class="error-code">404</p>
-  <h1 class="error-title">ไม่พบหน้าที่คุณค้นหา</h1>
-  <p class="error-desc">หน้านี้อาจถูกย้าย ลบไปแล้ว หรือลิงก์ที่คุณกดเข้ามาอาจไม่ถูกต้อง ลองกลับไปที่หน้าแรกหรือแอดไลน์สอบถามทีมงานของเราได้เลย</p>
-  <div class="error-actions">
-    <a href="index.html" class="btn btn-outline-dark"><span>กลับหน้าแรก</span></a>
-    <a href="https://line.me/R/ti/p/@rayandco" target="_blank" rel="noopener" class="btn btn-line line-cta">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 5.79 2 10.45c0 4.17 3.55 7.67 8.35 8.32.32.07.77.21.88.49.1.25.06.65.03.9l-.14.9c-.04.25-.2.99.86.54 1.06-.45 5.72-3.37 7.8-5.77C21.24 13.9 22 12.26 22 10.45 22 5.79 17.52 2 12 2Z"/></svg>
-      <span>แอดไลน์สอบถาม</span>
-    </a>
-  </div>
-</div>
-
+  <main class="page">
+    <a class="brand" id="brandHomeLink" href="index.html" aria-label="กลับหน้าแรก Ray &amp; Co, Vision Lab"><img src="assets/images/branding/ray-co-vision-lab-logo-v2.png" width="238" height="73" alt="Ray &amp; Co, Vision Lab"></a>
+    <section class="stage" aria-labelledby="notFoundTitle">
+      <div class="content">
+        <p class="kicker">VISION OUT OF RANGE</p>
+        <p class="code" aria-hidden="true">404</p>
+        <h1 id="notFoundTitle">ไม่พบหน้าที่คุณ<em>กำลังมองหา</em></h1>
+        <p>ลิงก์อาจถูกย้าย เปลี่ยนชื่อ หรือไม่มีอยู่แล้ว คุณสามารถกลับไปสำรวจเว็บไซต์ หรือติดต่อเราเพื่อรับคำแนะนำได้ทันที</p>
+        <div class="actions"><a class="btn btn-primary" id="homeLink" href="index.html">กลับหน้าแรก <span>↗</span></a><a class="btn btn-line" href="https://line.me/R/ti/p/@raycovisionlab" target="_blank" rel="noopener">ติดต่อผ่าน LINE <span>●</span></a></div>
+      </div>
+    </section>
+    <footer class="footer"><span>RAY &amp; CO, VISION LAB</span><span>PRECISION IN EVERY DETAIL</span></footer>
+  </main>
+  <script>
+    (()=>{const links=[document.getElementById('homeLink'),document.getElementById('brandHomeLink')];const favicon=document.getElementById('errorFavicon');let home='index.html';if(location.protocol!=='file:'){const parts=location.pathname.split('/').filter(Boolean);home=location.hostname.endsWith('github.io')&&parts.length?`/${parts[0]}/`:'/'}links.forEach(link=>{if(link)link.href=home});if(favicon)favicon.href=`${home}favicon.ico`})();
+  </script>
 </body>
 </html>
