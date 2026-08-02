@@ -20,11 +20,11 @@ window.RAYCO_CONFIG = {
     line: 'https://line.me/R/ti/p/@raycovisionlab'
   },
   contact: {
-    isSample: true,
+    isSample: false,
     address: '99/9 ถนนสุขุมวิท แขวงตัวอย่าง เขตวัฒนา กรุงเทพฯ 10110 (ข้อมูลตัวอย่าง)',
     phone: '0XX-XXX-XXXX (ข้อมูลตัวอย่าง)',
     openingHours: 'ทุกวัน 10:00–20:00 น. (ข้อมูลตัวอย่าง)',
-    mapOpenUrl: '',
+    mapOpenUrl: 'https://maps.app.goo.gl/6tX1bFjv577nN2Qg7',
     mapEmbedUrl: ''
   },
   hero: {
